@@ -1,0 +1,622 @@
+/* ===============Default CSS=============== */
+:root{
+    --primary-color: #f5f2ea;
+    --secondary-color: #bf925b;
+    --font-color: #acaba8;
+    --black: #000;
+    --white: #fff;
+}
+body{
+    font-family: 'Poppins';
+}
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 0.5vw;
+}
+*{
+    box-sizing: border-box;
+    margin: 0 !;
+}
+.container{
+    max-width: 1200px !important;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+a{
+    text-decoration: none !important;
+} 
+/*  =========== Cols ===========  */
+
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.66%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33%;
+}
+.col-11{
+    width: 91.66%;
+}
+.col-12{
+    width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+section{
+    overflow: hidden;
+}
+/* ====== Cstm - Btn ======= */
+.cstm-btns{
+    background-color: var(--secondary-color);
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 7px;
+    width: max-content;
+    transition: all 0.3s;
+}
+.top-doun .navbar-nav {
+    left: 0%;
+    transition: all 0.7s;
+}
+
+
+/* ========================header====================== */
+.header{
+    background-color: var(--black);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    position: relative;
+}
+.head{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    z-index: 999;
+}
+.logo img{
+    height: 100px;
+    width: 150px;   
+}
+.head-bun{
+    display: none;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.menu li a{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    color: var(--secondary-color);
+}
+/* ========================banner====================== */
+.banner{
+    background-image: url(../img/hero-img.jpg);
+    background-size: cover;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    position: relative;
+}
+.banner::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+    left: 0;
+    background-color: var(--black);
+}
+.banner .row{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+.hero{
+    z-index: 999;
+}
+.hero h1{
+    font-size: 100px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-align: center;
+    line-height: 110px;
+}
+.hero p{
+    text-align: center; 
+    color: var(--secondary-color);
+}
+
+/* =======================about================= */
+.about{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.about .row{
+    align-items: center;
+}
+.about-data h6{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.about-data h3{
+    font-size: 40px;
+    font-family: 'Playfair Display';
+    max-width: 450px;
+    line-height: 53px;
+    margin-bottom: 10px;
+}
+.about-data p{
+    font-size: 18px;
+    font-weight: 200;
+    max-width: 515px;
+    margin-bottom: 35px;
+}
+.about-data a{
+    max-width: 200px;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+}
+
+/* ==============service============== */
+.service{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.serv-data{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.serv-data p{
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: var(--secondary-color);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.serv-data h1{
+    margin-bottom: 25px;
+    font-size: 60px;
+    color: var(--black);
+    text-transform: uppercase;
+    font-family: 'Playfair Display';
+}
+.serv-data h6{
+    margin-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color:#898885;
+}
+.icon-1 img{
+    height: 80px;
+    width: 80px;
+    margin: 10px auto;
+}
+.hair-style{
+    transition: all 0.5s;
+}
+.hair-style:hover{
+    background-color:var(--secondary-color);
+    transition: all 0.5s;
+    color: var(--white);
+    border-radius: 10px;
+}
+.icon-2 img{
+    height: 80px;
+    width: 80px;
+    margin: 10px auto;
+}
+.beard:hover{
+    background-color:var(--secondary-color);
+    transition: all 0.5s;
+    color: var(--white);
+    border-radius: 10px;
+}
+.beard{
+    transition: all 0.5s;
+}
+.icon-3 img{
+    height: 80px;
+    width: 80px;
+    margin: 10px auto;
+}
+.makeup:hover{
+    background-color:var(--secondary-color);
+    transition: all 0.5s;
+    color: var(--white);
+    border-radius: 10px;
+}
+.makeup{
+    transition: all 0.5s;
+}
+.icon-4 img{
+    height: 80px;
+    width: 80px;    
+    margin: 10px auto;
+}
+.body-treatment:hover{
+    background-color:var(--secondary-color);
+    transition: all 0.5s;
+    color: var(--white);
+    border-radius: 10px;
+}
+.body-treatment{
+    transition: all 0.5s;
+}
+.icon-data{
+    text-align: center;
+}
+.icon-data h2{
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+/* ========================team======================== */
+.team{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #ebe8de;
+}
+.team-data{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.team-data p{
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: var(--secondary-color);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.team-data h1{
+    margin-bottom: 25px;
+    font-size: 60px;
+    color: var(--black);
+    text-transform: uppercase;
+    font-family: 'Playfair Display';
+}
+.team-data h6{
+    margin-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color:#898885;
+}
+.artist-1 h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 5px;
+    margin: 0;
+}
+.artist-1{
+    margin: 20px !important;
+}
+.artist-1 h5{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--secondary-color);
+    background-color: var(--black);
+    padding: 5px;
+    margin: 0;
+}
+ /* =========================features==========================  */
+.feature{
+    background-image: url(../img/feature_bg.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.w-n-1{
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-family: 'Playfair Display';
+    width: 140px;
+    height: 140px;
+    border-radius: 90%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+
+}
+.w-n-2{
+    background-color: rgb(76, 88, 80);
+    color: var(--white);
+    font-family: 'Playfair Display';
+    width: 140px;
+    height: 140px;
+    border-radius: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    display: block ; 
+}
+
+/* -========================FAQS====================== */
+h1 {
+    margin: 0;
+    line-height: 2;
+    text-align: center;
+}
+  
+h2 {
+    color:var(--secondary-color);
+    margin: 0 0 0.5em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+  
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.faq{
+    padding: 120px 0;
+    background-color: var(--secondary-color);
+}
+  
+.tab {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+.tab-label {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 1em;
+    background: var(--font-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.tab-label:hover {
+    background: #1a252f;
+    transition: all 0.5s;
+}
+.tab-label::after {
+    content: "❯";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
+}
+.tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: var(--primary-color);
+    transition: all 0.35s;
+}
+.tab-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: #2c3e50;
+    cursor: pointer;
+}
+.tab-close:hover {
+    background: #1a252f;
+}
+  
+input:checked + .tab-label {
+    background: #1a252f;
+}
+input:checked + .tab-label::after {
+    transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+}
+
+/* ======================offers================ */
+.offer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.offer-data{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.offer-data p{
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: var(--secondary-color);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.offer-data h1{
+    margin-bottom: 25px;
+    font-size: 60px;
+    color: var(--black);
+    text-transform: uppercase;
+    font-family: 'Playfair Display';
+}
+.offer-data h6{
+    margin-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color:#898885;
+}
+.hair-styles , .Manicure-Pedicure , .Makeup {
+    margin: 10px;
+}
+.hair-styles h4:hover{
+    color: var(--white);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.hair-styles h4{
+    font-size:  20px;
+    color: var(--secondary-color);
+    transition: all 0.5s;
+}
+.Manicure-Pedicure h4:hover{
+    color: var(--white);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.Manicure-Pedicure h4{
+    font-size:  20px;
+    color: var(--secondary-color);
+    transition: all 0.5s;
+}
+.Makeup h4:hover{
+    color: var(--white);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.Makeup h4{
+    font-size: 20px;
+    color: var(--secondary-color);
+    transition: all 0.5s;
+}
+.menu h3{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: var(--font-color);
+    padding: 10px 0px;
+    margin: 0;
+    transition: all 0.5s;
+}
+.menu h3:hover{
+    background-color:#aeaaaa;
+    color: var(--black);
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+
+/* =====================testimonial================= */
+.testimonial{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #ebe8de;
+    text-align: center; 
+}
+.testimonial p{
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: var(--secondary-color);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.testimonial h1{
+    margin-bottom: 25px;
+    font-size: 60px;
+    color: var(--black);
+    text-transform: uppercase;
+    font-family: 'Playfair Display';
+}
+.testimonial h6{
+    margin-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color:#898885;
+}
+.artist-1 h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 5px;
+    margin: 0;
+}
+.artist-1 h5{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--secondary-color);
+    background-color: var(--black);
+    padding: 5px;
+    margin: 0;
+}
+
+/* =========================contact================== */
+.contact{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--secondary-color);
+}
+.con{
+    display: flex;
+    align-items: center; 
+}
+.contact-info h3{
+    font-size: 30px;
+    text-transform: uppercase   ;
+}
+.contact-info h4{
+    font-size: 21px;
+}
+.contact-info h5{
+    font-size: 18px;
+}
+.company{
+    align-items: center;
+}
+.s-s{
+    font-size: 50px;
+}
+
+/* ==================footer===================== */
+.footer{
+    background-color: var(--black);
+}
+.footer h5{
+    color: var(--white);
+    text-align: center;     
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
